@@ -11,5 +11,40 @@
             "/img/sofa/blue13.jpeg"
         ],
         "type":"sofa"
-    }
+    },
+    {
+        "id":"2",
+        "name":"Sofa Red",
+        "description":"lorem5",
+        "images": [],
+        "img":"/img/sofa/red.jpeg",
+        "img1":"/img/sofa/red1.jpeg",
+        "img2":"/img/sofa/red9.jpeg",
+        "img3":"/img/sofa/red12.jpeg",
+        "img4":"/img/sofa/red14.jpeg"
+    },
+    {
+        "id":"3",
+        "name":"Sofa Green",
+        "description":"lorem5",
+        "images": [],
+        "img":"/img/sofa/greeen.jpeg",
+        "img1":"/img/sofa/greeen1.jpeg",
+        "img2":"/img/sofa/greeen2.jpeg",
+        "img3":"/img/sofa/greeen3.jpeg",
+        "img4":"/img/sofa/greeen4.jpeg"
+    },
+    {
+        "id":"4",
+        "name":"Sofa Yellow",
+        "description":"lorem5",
+        "images": [],
+        "img":"/img/sofa/ye.jpeg",
+        "img1":"/img/sofa/ye1.jpeg",
+        "img2":"/img/sofa/ye2.jpeg",
+        "img3":"/img/sofa/ye3.jpeg",
+        "img5":"/img/sofa/ye4.jpeg",
+        "img6":"/img/sofa/ye5.jpeg",
+        "img7":"/img/sofa/ye6.jpeg"
+    } 
 ]

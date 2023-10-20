@@ -1,5 +1,4 @@
 
-
 function Hero() {
   return (
     <div className="mx-auto max-w-7xl flex justify-center items-center gap-10">
@@ -17,7 +16,7 @@ function Hero() {
         </div>
     </div>
     <div>
-        <img className="max-h-[550px]" src="../public/sofa.svg" alt="sofa" />
+        <img className="max-h-[550px]" src="/src/assets/img/sofa.png" alt="sofa" />
     </div>
     </div>
   )
