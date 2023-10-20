@@ -1,0 +1,15 @@
+[
+    {
+        "id":"1",
+        "name":"Sofa Blue",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/blue.jpeg",
+            "/img/sofa/blue10.jpeg",
+            "/img/sofa/blue11.jpeg",
+            "/img/sofa/blue14.jpeg",
+            "/img/sofa/blue13.jpeg"
+        ],
+        "type":"sofa"
+    }
+]
