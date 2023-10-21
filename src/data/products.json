@@ -11,7 +11,7 @@
             "/img/sofa/blck3.jpeg",
             "/img/sofa/blck4.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"2",
@@ -28,7 +28,7 @@
             "/img/sofa/gr8.jpeg",
             "/img/sofa/gr4.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"3",
@@ -42,7 +42,7 @@
             "/img/sofa/yel2.jpeg",
             "/img/sofa/yel3.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"4",
@@ -56,7 +56,7 @@
             "/img/sofa/greeen4.jpeg",
             "/img/sofa/greeen5.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"5",
@@ -79,7 +79,7 @@
             "/img/sofa/brown1.jpeg",
             "/img/sofa/brown66.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"7",
@@ -94,7 +94,7 @@
             "/img/sofa/ye5.jpeg",
             "/img/sofa/ye6.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"8",
@@ -112,7 +112,7 @@
             "/img/sofa/purple11.jpeg",
             "/img/sofa/purple10.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"9",
@@ -126,7 +126,7 @@
             "/img/sofa/se4.jpeg",
             "/img/sofa/se5.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"10",
@@ -140,7 +140,20 @@
             "/img/sofa/blck8.jpeg",
             "/img/sofa/blck6.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
+    },
+    {
+        "id":"111",
+        "name":"Sofa Grey III",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/set3.jpeg",
+            "/img/sofa/set1.jpeg",
+            "/img/sofa/set4.jpeg",
+            "/img/sofa/set5.jpeg",
+            "/img/sofa/set7.jpeg"
+        ],
+        "type":"set"
     },
     {
         "id":"11",
@@ -156,7 +169,7 @@
             "/img/sofa/swhite6.jpeg",
             "/img/sofa/swhite7.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"12",
@@ -167,7 +180,20 @@
             "/img/sofa/white111.jpeg",
             "/img/sofa/white1111.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
+    },
+    {
+        "id":"121",
+        "name":"Sofa Purple II",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/purp4.jpeg",
+            "/img/sofa/purp.jpeg",
+            "/img/sofa/purp6.jpeg",
+            "/img/sofa/purp2.jpeg",
+            "/img/sofa/purp1.jpeg"
+        ],
+        "type":"set"
     },
     {
         "id":"13",
@@ -181,7 +207,7 @@
             "/img/sofa/red13.jpeg",
             "/img/sofa/red14.jpeg"
         ],
-        "type":"sofa"
+        "type":"set"
     },
     {
         "id":"14",
@@ -194,6 +220,309 @@
             "/img/sofa/grey3.jpeg",
             "/img/sofa/grey4.jpeg"
         ],
+        "type":"set"
+    },
+    {
+        "id":"15",
+        "name":"Sofa Grey-Hard",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/yel2.jpeg"
+        ],
         "type":"sofa"
+    },
+    {
+        "id":"16",
+        "name":"Sofa Green for Dog",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/green4.jpeg",
+            "/img/chair/green.jpeg",
+            "/img/chair/green1.jpeg",
+            "/img/chair/green2.jpeg",
+            "/img/chair/green5.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"17",
+        "name":"Sofa White III",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/white.jpeg",
+            "/img/sofa/white1.jpeg",
+            "/img/sofa/white2.jpeg",
+            "/img/sofa/white4.jpeg",
+            "/img/sofa/white5.jpeg",
+            "/img/sofa/white6.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"18",
+        "name":"Sofa Grey-Hard",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/grey.jpeg",
+            "/img/sofa/grey1.jpeg",
+            "/img/sofa/grey2.jpeg",
+            "/img/sofa/grey3.jpeg",
+            "/img/sofa/grey4.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"19",
+        "name":"Sofa Blue Dark",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/blue1.jpeg",
+            "/img/chair/blue.jpeg",
+            "/img/chair/blue3.jpeg",
+            "/img/chair/blue4.jpeg",
+            "/img/chair/blue7.jpeg",
+            "/img/chair/blue8.jpeg",
+            "/img/chair/blue9.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"20",
+        "name":"Sofa Brown II",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/brown12.jpeg",
+            "/img/chair/grey11.jpeg",
+            "/img/chair/grey13.jpeg",
+            "/img/chair/grey14.jpeg",
+            "/img/chair/grey15.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"21",
+        "name":"Chair Brown",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/blue8.jpeg",
+            "/img/chair/blue3.jpeg",
+            "/img/chair/blue6.jpeg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"22",
+        "name":"Bar",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/bar.jpg",
+            "/img/chair/ch1.jpeg",
+            "/img/chair/ch5.jpeg",
+            "/img/chair/ch6.jpeg",
+            "/img/chair/ch3.jpeg",
+            "/img/chair/ch2.jpeg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"23",
+        "name":"Coffe chair",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/chair.jpeg",
+            "/img/chair/chair3.jpeg",
+            "/img/chair/chair4.jpeg",
+            "/img/chair/chair1.jpeg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"24",
+        "name":"Chair wood",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/chair9.jpg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"25",
+        "name":"Chair grey",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/chair7.jpeg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"26",
+        "name":"Chair wood II",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/chair5.jpeg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"27",
+        "name":"Chair Red",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/red.jpeg"
+        ],
+        "type":"chair"
+    },
+    {
+        "id":"28",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table3.jpg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"29",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table8.jpeg",
+            "/img/table/table9.jpeg",
+            "/img/table/table10.jpeg",
+            "/img/table/table7.jpge",
+            "/img/table/table12.jpeg",
+            "/img/table/table13.jpeg"
+
+        ],
+        "type":"table"
+    },
+    {
+        "id":"30",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table4.jpg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"31",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table1.jpg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"32",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table6.jpg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"33",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table15.jpeg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"33",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table21.jpeg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"33",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/woodtable.jpeg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"34",
+        "name":"Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/table212.jpeg",
+            "/img/table/table23.jpeg",
+            "/img/table/table20.jpeg",
+            "/img/table/table25.jpeg",
+            "/img/table/table19.jpeg",
+            "/img/table/table29.jpeg",
+            "/img/table/table22.jpeg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"35",
+        "name":"Case",
+        "description":"lorem5",
+        "images": [
+            "/img/case/wood6.jpeg",
+            "/img/case/wood4.jpeg",
+            "/img/case/wood.jpeg",
+            "/img/case/wood7.jpeg",
+            "/img/case/wood1.jpeg"
+        ],
+        "type":"case"
+    },
+    {
+        "id":"36",
+        "name":"Case",
+        "description":"lorem5",
+        "images": [
+            "/img/case/a1.jpeg",
+            "/img/case/a4.jpeg",
+            "/img/case/a3.jpeg",
+            "/img/case/a2.jpeg"
+        ],
+        "type":"case"
+    },
+    {
+        "id":"37",
+        "name":"Case",
+        "description":"lorem5",
+        "images": [
+            "/img/case/ca2.jpeg",
+            "/img/case/ca3.jpeg",
+            "/img/case/ca4.jpeg",
+            "/img/case/ca.jpeg",
+            "/img/case/ca5.jpeg"
+        ],
+        "type":"case"
+    },
+    {
+        "id":"38",
+        "name":"Case",
+        "description":"lorem5",
+        "images": [
+            "/img/case/cas3.jpeg",
+            "/img/case/cas2.jpeg",
+            "/img/case/cas.jpeg"
+        ],
+        "type":"case"
+    },
+    {
+        "id":"39",
+        "name":"Case",
+        "description":"lorem5",
+        "images": [
+            "/img/case/case10.jpeg",
+            "/img/case/case11.jpeg",
+            "/img/case/case13.jpeg"
+        ],
+        "type":"case"
     }
 ]
