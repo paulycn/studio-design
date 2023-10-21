@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaInstagram } from 'react-icons/fa'
 import { BiPhoneCall } from 'react-icons/bi'
-import { AiOutlineFacebook } from 'react-icons/ai'
+import { FiFacebook } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
       {/* <div className="flex gap-1">
         <button>EN</button>
     </div> */}
-      <div className="flex gap-4 absolute justify-center right-20">
+      <div className="flex gap-4 absolute justify-center right-72">
         <a href="#" onClick={() => (window.location.href = 'tel:+37379908683')}>
           <BiPhoneCall />
         </a>
@@ -23,7 +23,7 @@ function Header() {
           <FaInstagram />
         </a>
         <a href="https://www.facebook.com/profile.php?id=100059080966642&sk=photos">
-          <AiOutlineFacebook />
+          <FiFacebook />
         </a>
       </div>
     </header>

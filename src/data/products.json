@@ -4,6 +4,65 @@
         "name":"Sofa Blue",
         "description":"lorem5",
         "images": [
+            "/img/sofa/blk5.jpeg",
+            "/img/sofa/blk1.jpeg",
+            "/img/sofa/blck.jpeg",
+            "/img/sofa/blck2.jpeg",
+            "/img/sofa/blck3.jpeg",
+            "/img/sofa/blck4.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"2",
+        "name":"Sofa Grey-Yellow",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/gr3.jpeg",
+            "/img/sofa/gr.jpeg",
+            "/img/sofa/gr5.jpeg",
+            "/img/sofa/gr6.jpeg",
+            "/img/sofa/gr1.jpeg",
+            "/img/sofa/gr2.jpeg",
+            "/img/sofa/gr7.jpeg",
+            "/img/sofa/gr8.jpeg",
+            "/img/sofa/gr4.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"3",
+        "name":"Sofa Yellow",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/yel1.jpeg",
+            "/img/sofa/yel5.jpeg",
+            "/img/sofa/yel4.jpeg",
+            "/img/sofa/yel6.jpeg",
+            "/img/sofa/yel2.jpeg",
+            "/img/sofa/yel3.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"4",
+        "name":"Sofa Green",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/greeen.jpeg",
+            "/img/sofa/greeen1.jpeg",
+            "/img/sofa/greeen2.jpeg",
+            "/img/sofa/greeen3.jpeg",
+            "/img/sofa/greeen4.jpeg",
+            "/img/sofa/greeen5.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"5",
+        "name":"Sofa Blue",
+        "description":"lorem5",
+        "images": [
             "/img/sofa/blue.jpeg",
             "/img/sofa/blue10.jpeg",
             "/img/sofa/blue11.jpeg",
@@ -11,40 +70,130 @@
             "/img/sofa/blue13.jpeg"
         ],
         "type":"sofa"
+    },{
+        "id":"6",
+        "name":"Sofa Brown",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/brown.jpeg",
+            "/img/sofa/brown1.jpeg",
+            "/img/sofa/brown66.jpeg"
+        ],
+        "type":"sofa"
     },
     {
-        "id":"2",
+        "id":"7",
+        "name":"Sofa Ivory",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/ye.jpeg",
+            "/img/sofa/ye1.jpeg",
+            "/img/sofa/ye2.jpeg",
+            "/img/sofa/ye3.jpeg",
+            "/img/sofa/ye4.jpeg",
+            "/img/sofa/ye5.jpeg",
+            "/img/sofa/ye6.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"8",
+        "name":"Sofa Purple",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/purple4.jpeg",
+            "/img/sofa/purple1.jpeg",
+            "/img/sofa/purple2.jpeg",
+            "/img/sofa/purple3.jpeg",
+            "/img/sofa/purple5.jpeg",
+            "/img/sofa/purple7.jpeg",
+            "/img/sofa/purple8.jpeg",
+            "/img/sofa/purple9.jpeg",
+            "/img/sofa/purple11.jpeg",
+            "/img/sofa/purple10.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"9",
+        "name":"Sofa Grey Wood",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/se3.jpeg",
+            "/img/sofa/se1.jpeg",
+            "/img/sofa/se.jpeg",
+            "/img/sofa/se2.jpeg",
+            "/img/sofa/se4.jpeg",
+            "/img/sofa/se5.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"10",
+        "name":"Sofa Grey II",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/blk13.jpeg",
+            "/img/sofa/blck7.jpeg",
+            "/img/sofa/blck12.jpeg",
+            "/img/sofa/blck9.jpeg",
+            "/img/sofa/blck8.jpeg",
+            "/img/sofa/blck6.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"11",
+        "name":"Sofa White",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/swhite.jpeg",
+            "/img/sofa/swhite1.jpeg",
+            "/img/sofa/swhite2.jpeg",
+            "/img/sofa/swhite3.jpeg",
+            "/img/sofa/swhite4.jpeg",
+            "/img/sofa/swhite5.jpeg",
+            "/img/sofa/swhite6.jpeg",
+            "/img/sofa/swhite7.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"12",
+        "name":"Sofa White II",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/white11.jpeg",
+            "/img/sofa/white111.jpeg",
+            "/img/sofa/white1111.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"13",
         "name":"Sofa Red",
         "description":"lorem5",
-        "images": [],
-        "img":"/img/sofa/red.jpeg",
-        "img1":"/img/sofa/red1.jpeg",
-        "img2":"/img/sofa/red9.jpeg",
-        "img3":"/img/sofa/red12.jpeg",
-        "img4":"/img/sofa/red14.jpeg"
+        "images": [
+            "/img/sofa/red12.jpeg",
+            "/img/sofa/red1.jpeg",
+            "/img/sofa/red9.jpeg",
+            "/img/sofa/red.jpeg",
+            "/img/sofa/red13.jpeg",
+            "/img/sofa/red14.jpeg"
+        ],
+        "type":"sofa"
     },
     {
-        "id":"3",
-        "name":"Sofa Green",
+        "id":"14",
+        "name":"Sofa Grey-Hard",
         "description":"lorem5",
-        "images": [],
-        "img":"/img/sofa/greeen.jpeg",
-        "img1":"/img/sofa/greeen1.jpeg",
-        "img2":"/img/sofa/greeen2.jpeg",
-        "img3":"/img/sofa/greeen3.jpeg",
-        "img4":"/img/sofa/greeen4.jpeg"
-    },
-    {
-        "id":"4",
-        "name":"Sofa Yellow",
-        "description":"lorem5",
-        "images": [],
-        "img":"/img/sofa/ye.jpeg",
-        "img1":"/img/sofa/ye1.jpeg",
-        "img2":"/img/sofa/ye2.jpeg",
-        "img3":"/img/sofa/ye3.jpeg",
-        "img5":"/img/sofa/ye4.jpeg",
-        "img6":"/img/sofa/ye5.jpeg",
-        "img7":"/img/sofa/ye6.jpeg"
-    } 
+        "images": [
+            "/img/sofa/grey.jpeg",
+            "/img/sofa/grey1.jpeg",
+            "/img/sofa/grey2.jpeg",
+            "/img/sofa/grey3.jpeg",
+            "/img/sofa/grey4.jpeg"
+        ],
+        "type":"sofa"
+    }
 ]
