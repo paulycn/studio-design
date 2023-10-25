@@ -1,13 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0b15b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.primary');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: theme('colors.text-p');
+}
+
+.logo {
+  /* font-family: 'Comforter Brush', cursive; */
+  font-family:'Dancing Script', cursive;;
+  /* font-family: 'Great Vibes', cursive; */
 }
 
 body {
@@ -19,6 +45,10 @@ body {
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
+}
+
+main {
+  min-height: calc(100vh - 160px);
 }
 
 a {

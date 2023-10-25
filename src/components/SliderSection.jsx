@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
-import React from 'react'
 import products from '../data/products.json'
 import 'swiper/css'
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { PropTypes } from 'prop-types'
+import React from 'react'
 
 function SliderSection({ type, title }) {
   let swiper
@@ -16,7 +16,7 @@ function SliderSection({ type, title }) {
 
   return (
     <section>
-      <div className="flex gap-5 items-center justify-start ml-10 mb-5">
+      <div className="flex gap-5 items-center justify-start ml-10 mb-1 mt-6">
         <div className="w-2 h-2 rounded-full bg-primary "></div>
         <h3>{title}</h3>
         <div>
