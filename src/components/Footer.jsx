@@ -17,7 +17,7 @@ function Footer() {
           <Link to="/">
             <Logo />
           </Link>
-          {/* <span className="text-xs">© Paula Cazac 2023</span> */}
+          {/* <span className="text-xs">© Studio Loft 2023. All rights reserved.</span> */}
         </div>
         <div className="grid col-span-2 items-center justify-center gap-2">
           <a>Contacte</a>

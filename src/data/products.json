@@ -406,15 +406,6 @@
         "type":"table"
     },
     {
-        "id":"31",
-        "name":"Table",
-        "description":"lorem5",
-        "images": [
-            "/img/table/table1.jpg"
-        ],
-        "type":"table"
-    },
-    {
         "id":"32",
         "name":"Table",
         "description":"lorem5",
