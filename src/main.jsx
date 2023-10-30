@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './layouts/Layout'
 import Home from './pages/Home.jsx'
 import Catalog from './pages/Catalog'
+import CatalogItems from './pages/CatalogItems'
+import About from './pages/About'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: '/catalog',
         element: <Catalog />
+      },
+      {
+        path: '/catalog/:id',
+        element: <CatalogItems />
+      },
+      {
+        path: '/about',
+        element: <About />
       }
     ]
   }

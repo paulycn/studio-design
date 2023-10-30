@@ -10,12 +10,12 @@ export default function Home() {
         <Hero />
         <Works />
       </section>
-      <section className="py-24 bg-white">
+      <section className="py-24 lg:bg-white">
         <div className="mx-auto max-w-5xl bg-bg-color px-14 pt-10 pb-16 rounded">
           <h2 className="mb-10 font-normal text-text-p text-3xl text-center underline decoration-primary underline-offset-8 decoration-2">
             De ce sa ne alegi pe noi?
           </h2>
-          <div className="flex justify-center gap-10">
+          <div className="flex justify-center gap-10 flex-col md:flex-row">
             <Card
               card_title="Lucrul manual"
               card_paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi modi accusantium!"

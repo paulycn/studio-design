@@ -16,7 +16,7 @@ function Header() {
       <nav className="flex gap-11 text-base">
         <Link to="/">Home</Link>
         <Link to="/catalog">Catalog</Link>
-        <Link to="/">About Us</Link>
+        <Link to="/about">About Us</Link>
       </nav>
       <div className="flex gap-4 justify-center">
         <a href="#" onClick={() => (window.location.href = 'tel:+37379908683')}>

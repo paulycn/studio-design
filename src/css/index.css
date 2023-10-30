@@ -83,3 +83,8 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.bg-active {
+  background-color: #e0d2b6;
+  border: 2px solid #e0b15b;
+}

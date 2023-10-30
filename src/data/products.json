@@ -2,20 +2,20 @@
     {
         "id":"1",
         "name":"Sofa Blue",
-        "description":"lorem5",
+        "description":"lorem10",
         "images": [
             "/img/sofa/blk5.jpeg",
             "/img/sofa/blk1.jpeg",
             "/img/sofa/blck.jpeg",
-            "/img/sofa/blck2.jpeg",
-            "/img/sofa/blck3.jpeg",
-            "/img/sofa/blck4.jpeg"
+            "/img/sofa/blk2.jpeg",
+            "/img/sofa/blk3.jpeg",
+            "/img/sofa/blk4.jpeg"
         ],
         "type":"set"
     },
     {
         "id":"2",
-        "name":"Sofa Grey-Yellow",
+        "name":"Sofa Grey Yellow",
         "description":"lorem5",
         "images": [
             "/img/sofa/gr3.jpeg",
@@ -134,11 +134,14 @@
         "description":"lorem5",
         "images": [
             "/img/sofa/blk13.jpeg",
-            "/img/sofa/blck7.jpeg",
-            "/img/sofa/blck12.jpeg",
-            "/img/sofa/blck9.jpeg",
-            "/img/sofa/blck8.jpeg",
-            "/img/sofa/blck6.jpeg"
+            "/img/sofa/blk15.jpeg",
+            "/img/sofa/blk8.jpeg",
+            "/img/sofa/blk9.jpeg",
+            "/img/sofa/blk17.jpeg",
+            "/img/sofa/blk7.jpeg",
+            "/img/sofa/blk6.jpeg",
+            "/img/sofa/blk18.jpeg",
+            "/img/sofa/blk12.jpeg"
         ],
         "type":"set"
     },
@@ -291,11 +294,13 @@
         "name":"Sofa Brown II",
         "description":"lorem5",
         "images": [
-            "/img/chair/brown12.jpeg",
-            "/img/chair/grey11.jpeg",
-            "/img/chair/grey13.jpeg",
-            "/img/chair/grey14.jpeg",
-            "/img/chair/grey15.jpeg"
+            "/img/sofa/brown12.jpeg",
+            "/img/sofa/brown13.jpeg",
+            "/img/sofa/brown14.jpeg",
+            "/img/sofa/brown2.jpeg",
+            "/img/sofa/brown22.jpeg",
+            "/img/sofa/brown23.jpeg",
+            "/img/sofa/brown11.jpeg"
         ],
         "type":"sofa"
     },

@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="mx-auto max-w-7xl flex justify-center items-center gap-10">
       <div className="flex flex-col gap-12">
-        <h1 className="text-5xl font-medium leading-tight text-black-p">
+        <h1 className="font-medium leading-tight text-black-p  text-2xl sm:text-4xl md:text-5xl  md:leading-tight">
           Studio Design <br />
           Mobilă la comandă
         </h1>
