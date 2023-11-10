@@ -17,33 +17,48 @@ function SliderSection({ type, title }) {
 
   return (
     <section>
-      <div className="flex gap-5 items-center justify-start ml-10 mb-1 mt-6">
+      <div className="flex gap-2 md:gap-3 items-center justify-start ml-5 sm:ml-16 mb-1 mt-3 md:mt-6">
         <div className="w-2 h-2 rounded-full bg-primary "></div>
         <Link to="/catalog">{title}</Link>
         <div>
           <HiOutlineArrowNarrowRight />
         </div>
       </div>
-      <div className="flex gap-5 items-center">
-        <a onClick={() => swiper.slidePrev()}>
+      <div className="flex md:gap-5 gap-2 items-center">
+        <button className=" bg-bg-color hover:border-primary p-1" onClick={() => swiper.slidePrev()}>
           <SlArrowLeft />
-        </a>
+        </button>
         <Swiper
           className="text-center"
           spaceBetween={50}
+          loopadditionalslides={1}
           slidesPerView={4}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => setSwiper(swiper)}
+          breakpoints={{
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 5
+            },
+            500: {
+              slidesPerView: 3,
+              spaceBetween: 40
+            },
+            800: {
+              slidesPerView: 4,
+              spaceBetween: 40
+            }
+          }}
         >
           {filteredData.map((product) => (
             <SwiperSlide className="flex items-center justify-center" key={product.id}>
-              <img className="max-h-44 rounded-sm object-cover" src={product.images[0]} alt={product.name} />
+              <img className="h-24 sm:h-44 rounded-sm object-cover" src={product.images[0]} alt={product.name} />
             </SwiperSlide>
           ))}
         </Swiper>
-        <a onClick={() => swiper.slideNext()}>
+        <button className=" bg-bg-color hover:border-primary p-1" onClick={() => swiper.slideNext()}>
           <SlArrowRight />
-        </a>
+        </button>
       </div>
     </section>
   )

@@ -9,7 +9,8 @@ export default {
         'bg-color': '#E5DED5',
         'primary': '#E79F14',
         'text-p':'#545454',
-        'black-p':'#323030'
+        'black-p':'#323030',
+        'header-col':'#ffc856'
       }
     },
   },

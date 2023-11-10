@@ -8,10 +8,10 @@ function Works() {
   return (
     <>
       <section>
-        <div className="mx-auto max-w-6xl py-20">
+        <div className="mx-auto max-w-6xl py-10 md:py-20">
           <Link
             to="/catalog"
-            className="font-normal text-text-p text-3xl text-center flex items-center justify-center underline decoration-primary underline-offset-8 decoration-2 hover:underline-offset-8 hover:decoration-2"
+            className="font-normal text-text-p text-xl sm:text-3xl text-center block underline decoration-primary sm:underline-offset-8  underline-offset-4 decoration-2 hover:underline-offset-8 sm:hover:decoration-2 sm:hover:underline-offset-8"
           >
             Comenzile realizate
           </Link>

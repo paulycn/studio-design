@@ -18,8 +18,8 @@ function Catalog() {
   }, [])
 
   return (
-    <section className="mx-auto pb-10 max-w-6xl flex justify-center flex-col items-center gap-10">
-      <ul className="flex-wrap flex justify-center gap-5 md:flex md:gap-10">
+    <section className="mx-auto py-5 max-w-6xl flex justify-center flex-col items-center gap-10">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:flex-wrap lg:flex justify-center gap-5 md:gap-10">
         <li
           className={`cursor-pointer py-2 px-2 flex justify-center text-white rounded w-25 text-xs md:text-base ${
             selectedType === '' ? 'bg-active' : 'bg-primary'
@@ -72,12 +72,17 @@ function Catalog() {
           Carcasă
         </li>
       </ul>
-      <div className="grid grid-cols-4 gap-8 justify-start">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 justify-start">
         {filteredData.map((product) => (
           <div className="flex items-center justify-start" key={product.id}>
             <div className="flex flex-col items-center gap-3">
-              <img className="max-h-44 rounded-sm object-cover" src={product.images[0]} alt={product.name} />
-              <Link to={`/catalog/${product.id}`}>Vezi detalii</Link>
+              <img className="md:max-h-44 rounded-sm object-cover max-h-36" src={product.images[0]} alt={product.name} />
+              <Link
+                to={`/catalog/${product.id}`}
+                className="text-sm sm:text-base rounded py-0 px-4 bg-header-col text-white hover:no-underline hover:bg-primary"
+              >
+                Detalii
+              </Link>
             </div>
           </div>
         ))}

@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <main className="bg-bg-color py-5 px-5">
+      <main className="bg-bg-color pt-10 sm:py-5 px-5">
         <Outlet />
       </main>
       <Footer />
