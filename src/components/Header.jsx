@@ -4,7 +4,7 @@ import { BiPhoneCall } from 'react-icons/bi'
 import { FiFacebook } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
-import Sidebar from './SIdebar'
+import Sidebar from './Sidebar'
 
 function Header() {
   return (
