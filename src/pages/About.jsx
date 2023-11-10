@@ -13,13 +13,7 @@ function About() {
         <br /> Mobilă living la comanda, dulapuri-cupe, mobilă pentru bucătarie ,dulapuri cu uși glisante, mobila hol, dresinguri, sufragerii, mobila
         pentru cafenele etc.
       </p>
-
-      <h4
-        className="underline decoration-primary underline-offset-8 decoration-2 text-center md:text-xl text-lg 
-      "
-      >
-        Contactându-ne, veți obține
-      </h4>
+      <h4 className="underline decoration-primary underline-offset-8 decoration-2 text-center md:text-xl text-lg">Contactându-ne, veți obține</h4>
       <div className="grid md:grid-cols-4 gap-5 items-center">
         <div className="flex flex-row sm:flex-col justify-center items-center gap-3">
           <Fade left>

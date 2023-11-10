@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaInstagram } from 'react-icons/fa'
 import { BiPhoneCall } from 'react-icons/bi'
 import { FiFacebook } from 'react-icons/fi'
@@ -7,6 +7,12 @@ import Logo from './Logo'
 import Sidebar from './Sidebar'
 
 function Header() {
+  const [activeLink, setActiveLink] = useState(null)
+
+  const handleClick = (link) => {
+    setActiveLink(link)
+  }
+
   return (
     <header id="outer-container">
       <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></Sidebar>
@@ -18,9 +24,15 @@ function Header() {
           </Link>
         </div>
         <nav className="hidden sm:flex gap-11 text-base ">
-          <Link to="/">Home</Link>
-          <Link to="/catalog">Catalog</Link>
-          <Link to="/about">Despre noi</Link>
+          <Link to="/" onClick={() => handleClick('home')} className={activeLink === 'home' ? 'active-link' : 'disabled-link'}>
+            Home
+          </Link>
+          <Link to="/catalog" onClick={() => handleClick('catalog')} className={activeLink === 'catalog' ? 'active-link' : 'disabled-link'}>
+            Catalog
+          </Link>
+          <Link to="/about" onClick={() => handleClick('about')} className={activeLink === 'about' ? 'active-link' : 'disabled-link'}>
+            Despre noi
+          </Link>
         </nav>
         <div className="hidden sm:flex gap-4 justify-center">
           <a href="#" onClick={() => (window.location.href = 'tel:+37379908683')}>

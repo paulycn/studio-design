@@ -27,16 +27,16 @@ function CatalogItems() {
           <BsArrowLeft /> Go back
         </a>
         <h3 className="text-center underline decoration-primary underline-offset-4 sm:underline-offset-8">{product.name}</h3>
-        <span></span>
       </div>
       <div>
         <p className="text-xs md:text-base">
-          Materiale: <span className=" text-bg-p text-sm">{product.description}</span>
+          Materiale:
+          <span className=" text-bg-p text-sm">{product.description}</span>
         </p>
-        <span className="text-xs md:text-base">
-          {' '}
-          Dimensiuni:<span className=" text-bg-p text-sm"> 350cm x 220cm (adaptiv) </span>
-        </span>
+        <p className="text-xs md:text-base">
+          Dimensiuni:
+          <span className=" text-bg-p text-sm"> 350cm x 220cm (adaptiv)</span>
+        </p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-8 items-center justify-start">
         {product.images.map((image, index) => (

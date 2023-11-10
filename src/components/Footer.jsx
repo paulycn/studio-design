@@ -14,7 +14,7 @@ function Footer() {
           <Link to="/">About Us</Link>
         </div>
         <div className="flex gap-1 sm:gap-5 items-center flex-col">
-          <Link to="/">
+          <Link to="/" className="hover:no-underline">
             <Logo />
           </Link>
           <span className="text-xs sm:text-xs">© Loft 2023. All rights reserved.</span>
