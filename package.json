@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "axios": "^1.6.1",
     "fslightbox-react": "^1.7.6",
     "postcss": "^8.4.31",
     "prop-types": "^15.8.1",
