@@ -23,10 +23,10 @@
             "/img/sofa/gr5.jpeg",
             "/img/sofa/gr6.jpeg",
             "/img/sofa/gr1.jpeg",
-            "/img/sofa/gr2.jpeg",
             "/img/sofa/gr7.jpeg",
             "/img/sofa/gr8.jpeg",
-            "/img/sofa/gr4.jpeg"
+            "/img/sofa/gr4.jpeg",
+            "/img/sofa/gr2.jpeg"
         ],
         "type":"set"
     },
@@ -70,16 +70,6 @@
             "/img/sofa/blue13.jpeg"
         ],
         "type":"sofa"
-    },{
-        "id":"6",
-        "name":"Sofa Brown",
-        "description":"lorem5",
-        "images": [
-            "/img/sofa/brown.jpeg",
-            "/img/sofa/brown1.jpeg",
-            "/img/sofa/brown66.jpeg"
-        ],
-        "type":"set"
     },
     {
         "id":"7",
@@ -101,18 +91,11 @@
         "name":"Sofa Purple",
         "description":"lorem5",
         "images": [
-            "/img/sofa/purple4.jpeg",
-            "/img/sofa/purple1.jpeg",
-            "/img/sofa/purple2.jpeg",
             "/img/sofa/purple3.jpeg",
-            "/img/sofa/purple5.jpeg",
-            "/img/sofa/purple7.jpeg",
-            "/img/sofa/purple8.jpeg",
-            "/img/sofa/purple9.jpeg",
-            "/img/sofa/purple11.jpeg",
-            "/img/sofa/purple10.jpeg"
+            "/img/sofa/purple1.jpeg",
+            "/img/sofa/purple2.jpeg"
         ],
-        "type":"set"
+        "type":"sofa"
     },
     {
         "id":"9",
@@ -191,7 +174,6 @@
         "description":"lorem5",
         "images": [
             "/img/sofa/purp4.jpeg",
-            "/img/sofa/purp.jpeg",
             "/img/sofa/purp6.jpeg",
             "/img/sofa/purp2.jpeg",
             "/img/sofa/purp1.jpeg"
@@ -227,7 +209,7 @@
     },
     {
         "id":"15",
-        "name":"Sofa Grey-Hard",
+        "name":"Sofa Orange",
         "description":"lorem5",
         "images": [
             "/img/sofa/yel2.jpeg"
@@ -240,10 +222,10 @@
         "description":"lorem5",
         "images": [
             "/img/chair/green4.jpeg",
-            "/img/chair/green.jpeg",
             "/img/chair/green1.jpeg",
+            "/img/chair/green.jpeg",
             "/img/chair/green2.jpeg",
-            "/img/chair/green5.jpeg"
+            "/img/chair/green3.jpeg"
         ],
         "type":"sofa"
     },
@@ -263,7 +245,7 @@
     },
     {
         "id":"18",
-        "name":"Sofa Grey-Hard",
+        "name":"Sofa Grey",
         "description":"lorem5",
         "images": [
             "/img/sofa/grey.jpeg",
@@ -280,12 +262,14 @@
         "description":"lorem5",
         "images": [
             "/img/chair/blue1.jpeg",
-            "/img/chair/blue.jpeg",
-            "/img/chair/blue3.jpeg",
-            "/img/chair/blue4.jpeg",
+            "/img/chair/blue10.jpeg",
+            "/img/chair/blue11.jpeg",
             "/img/chair/blue7.jpeg",
-            "/img/chair/blue8.jpeg",
-            "/img/chair/blue9.jpeg"
+
+            "/img/chair/blue9.jpeg",
+            "/img/chair/blue12.jpeg",
+            "/img/chair/blue13.jpeg",
+            "/img/chair/blue8.jpeg"
         ],
         "type":"sofa"
     },
@@ -412,10 +396,11 @@
     },
     {
         "id":"32",
-        "name":"Table",
+        "name":"Laptop Table",
         "description":"lorem5",
         "images": [
-            "/img/table/table6.jpg"
+            "/img/table/table6.jpg",
+            "/img/chair/laptop.jpeg"
         ],
         "type":"table"
     },
@@ -520,5 +505,121 @@
             "/img/case/case13.jpeg"
         ],
         "type":"case"
+    },
+    {
+        "id":"42",
+        "name":"Chair Wood III",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/chair11.jpeg",
+            "/img/chair/chair12.jpeg"
+        ],
+        "type":"case"
+    },
+    {
+        "id":"43",
+        "name":"Chair Brown II",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/brchair.jpeg",
+            "/img/chair/brchair1.jpeg",
+            "/img/chair/brchair3.jpeg",
+            "/img/chair/brchair5.jpeg"
+        ],
+        "type":"case"
+    },
+    {
+        "id":"44",
+        "name":"Grey Set",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/g1.jpeg",
+            "/img/sofa/g.jpeg",
+            "/img/sofa/g3.jpeg",
+            "/img/sofa/g2.jpeg",
+            "/img/sofa/g4.jpeg",
+            "/img/sofa/g5.jpeg",
+            "/img/sofa/g6.jpeg",
+            "/img/sofa/g7.jpeg"
+        ],
+        "type":"set"
+    },
+    {
+        "id":"45",
+        "name":"Grey Set",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/g9.jpeg",
+            "/img/sofa/g8.jpeg",
+            "/img/sofa/g2.jpeg",
+            "/img/sofa/g10.jpeg",
+            "/img/sofa/g12.jpeg",
+            "/img/sofa/g13.jpeg"
+        ],
+        "type":"set"
+    },
+    {
+        "id":"46",
+        "name":"Purple",
+        "description":"lorem5",
+        "images": [
+            "/img/sofa/purple11.jpeg",
+            "/img/sofa/purple5.jpeg",
+            "/img/sofa/purple7.jpeg",
+            "/img/sofa/purple8.jpeg",
+            "/img/sofa/purple9.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"47",
+        "name":"Sofa Brown III",
+        "description":"lorem5",
+        "images": [
+            "/img/chair/set20.jpeg",
+            "/img/chair/set21.jpeg"
+        ],
+        "type":"sofa"
+    },
+    {
+        "id":"48",
+        "name":"Grey Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/ta1.jpeg",
+            "/img/table/ta2.jpeg",
+            "/img/table/ta3.jpeg",
+            "/img/table/ta5.jpeg",
+            "/img/table/ta1.jpeg"
+        ],
+        "type":"table"
+    },
+    {
+        "id":"49",
+        "name":"Wood Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/t7.jpeg",
+            "/img/table/t.jpeg",
+            "/img/table/t2.jpeg",
+            "/img/table/t3.jpeg",
+            "/img/table/t4.jpeg",
+            "/img/table/t6.jpeg",
+            "/img/table/t5.jpeg"        
+        ],
+        "type":"table"
+    },
+    {
+        "id":"50",
+        "name":"Grey Table",
+        "description":"lorem5",
+        "images": [
+            "/img/table/tal2.jpeg",
+            "/img/table/tal1.jpeg",
+            "/img/table/tal2.jpeg",
+            "/img/table/tal3.jpeg",
+            "/img/table/tal4.jpeg"
+        ],
+        "type":"table"
     }
 ]
