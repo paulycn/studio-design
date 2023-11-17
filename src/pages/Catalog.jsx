@@ -56,19 +56,13 @@ function Catalog() {
           <div className="flex items-center justify-start" key={id}>
             <div className="flex flex-col items-center gap-3">
               <div>{attributes.categories.data[0].attributes.name}</div>
-              {attributes.cover &&
-                attributes.cover.data &&
-                attributes.cover.data.attributes &&
-                attributes.cover.data.attributes.formats &&
-                attributes.cover.data.attributes.formats.small &&
-                attributes.cover.data.attributes.formats.medium &&
-                attributes.cover.data.attributes.formats.large && (
-                  <img
-                    className="md:max-h-44 rounded-sm object-cover max-h-36"
-                    src={'http://localhost:1337' + attributes.cover.data.attributes.formats.medium.url}
-                    alt={attributes.name}
-                  />
-                )}
+              {attributes.cover && attributes.cover.data && attributes.cover.data.attributes.formats.small && (
+                <img
+                  className="md:max-h-44 rounded-sm object-cover max-h-36"
+                  src={'http://localhost:1337' + attributes.cover.data.attributes.formats.small.url}
+                  alt={attributes.name}
+                />
+              )}
               <Link
                 to={`/catalog/${id}`}
                 className="text-sm sm:text-base rounded py-0 px-4 bg-header-col text-white hover:no-underline hover:bg-primary"
