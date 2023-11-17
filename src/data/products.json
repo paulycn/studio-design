@@ -514,7 +514,7 @@
             "/img/chair/chair11.jpeg",
             "/img/chair/chair12.jpeg"
         ],
-        "type":"case"
+        "type":"chair"
     },
     {
         "id":"43",
@@ -526,7 +526,7 @@
             "/img/chair/brchair3.jpeg",
             "/img/chair/brchair5.jpeg"
         ],
-        "type":"case"
+        "type":"chair"
     },
     {
         "id":"44",
@@ -576,7 +576,7 @@
         "name":"Sofa Brown III",
         "description":"lorem5",
         "images": [
-            "/img/chair/set20.jpeg",
+            "/img/chair/brown45.jpeg",
             "/img/chair/set21.jpeg"
         ],
         "type":"sofa"
