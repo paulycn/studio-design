@@ -15,10 +15,10 @@ function Works() {
           >
             Comenzile realizate
           </Link>
-          <SliderSection title="Top vânzări" type="set" />
-          <SliderSection title="Sofa" type="sofa" />
-          <SliderSection title="Scaune" type="chair" />
-          <SliderSection title="Dulap" type="case" />
+          <SliderSection title="Seturi" category="Set" />
+          <SliderSection title="Sofa" category="Sofa" />
+          <SliderSection title="Scaune" category="Scaun" />
+          <SliderSection title="Dulap" category="Carcasă" />
         </div>
       </section>
     </>

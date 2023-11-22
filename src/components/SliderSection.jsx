@@ -1,19 +1,33 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
-import products from '../data/products.json'
 import 'swiper/css'
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { PropTypes } from 'prop-types'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
-function SliderSection({ type, title }) {
-  let swiper
-  const setSwiper = (value) => {
-    swiper = value
-  }
-  const filteredData = products.filter((product) => product.type === type)
+function SliderSection({ category, title }) {
+  const [works, setWorks] = useState([])
+  const [swiper, setSwiper] = useState(null)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const { data } = await axios.get('http://localhost:1337/api/works', {
+          params: { populate: ['categories', 'images', 'cover'] }
+        })
+        setWorks(data.data)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+
+    fetchData()
+  }, [])
+
+  const filteredData = works.filter((work) => work.attributes.categories.data[0].attributes.name === category)
 
   return (
     <section>
@@ -25,7 +39,7 @@ function SliderSection({ type, title }) {
         </div>
       </div>
       <div className="flex md:gap-5 gap-2 items-center">
-        <button className=" bg-bg-color hover:border-primary p-1" onClick={() => swiper.slidePrev()}>
+        <button className=" bg-bg-color hover:border-primary p-1" onClick={() => swiper && swiper.slidePrev()}>
           <SlArrowLeft />
         </button>
         <Swiper
@@ -33,6 +47,7 @@ function SliderSection({ type, title }) {
           spaceBetween={50}
           loopadditionalslides={1}
           slidesPerView={4}
+          navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => setSwiper(swiper)}
           breakpoints={{
@@ -50,13 +65,19 @@ function SliderSection({ type, title }) {
             }
           }}
         >
-          {filteredData.map((product) => (
-            <SwiperSlide className="flex items-center justify-center" key={product.id}>
-              <img className="h-24 sm:h-44 rounded-sm object-cover" src={product.images[0]} alt={product.name} />
+          {filteredData.map(({ id, attributes }) => (
+            <SwiperSlide className="flex items-center justify-center" key={id}>
+              {attributes.cover && attributes.cover.data && attributes.cover.data.attributes.formats.small && (
+                <img
+                  className="md:h-44 md:min-w-full rounded-sm object-cover max-h-40 h-36"
+                  src={'http://localhost:1337' + attributes.cover.data.attributes.formats.small.url}
+                  alt={attributes.name}
+                />
+              )}
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className=" bg-bg-color hover:border-primary p-1" onClick={() => swiper.slideNext()}>
+        <button className=" bg-bg-color hover:border-primary p-1" onClick={() => swiper && swiper.slideNext()}>
           <SlArrowRight />
         </button>
       </div>
@@ -65,7 +86,7 @@ function SliderSection({ type, title }) {
 }
 
 SliderSection.propTypes = {
-  type: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 }
 

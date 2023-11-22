@@ -27,7 +27,6 @@
   margin: 0;
   padding: 0;
   color: theme('colors.text-p');
-  /* overflow-x: hidden; */
 }
 
 #page-wrap {
@@ -53,12 +52,12 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 208px);
 }
 
 @media (max-width: 720px) {
   main {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 75px);
   }
 }
 
@@ -95,8 +94,13 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.bg-active {
-  background-color: #e0d2b6;
-  border: 2px solid #e0b15b;
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-color: theme('colors.primary');
+  text-underline-offset: 0.25rem;
 }
 
+.disabled-link {
+  text-decoration: none;
+}
