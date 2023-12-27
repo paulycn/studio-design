@@ -68,11 +68,13 @@ function SliderSection({ category, title }) {
           {filteredData.map(({ id, attributes }) => (
             <SwiperSlide className="flex items-center justify-center" key={id}>
               {attributes.cover && attributes.cover.data && attributes.cover.data.attributes.formats.small && (
-                <img
-                  className="md:h-44 md:min-w-full rounded-sm object-cover max-h-40 h-36"
-                  src={'http://localhost:1337' + attributes.cover.data.attributes.formats.small.url}
-                  alt={attributes.name}
-                />
+                <Link to={`/catalog/${id}`}>
+                  <img
+                    className="md:h-44 md:min-w-full rounded-sm object-cover max-h-40 h-36"
+                    src={'http://localhost:1337' + attributes.cover.data.attributes.formats.small.url}
+                    alt={attributes.name}
+                  />
+                </Link>
               )}
             </SwiperSlide>
           ))}

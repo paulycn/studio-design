@@ -37,7 +37,7 @@ function Sidebar() {
         <a href="https://www.instagram.com/mobilaloft26/" target="_blank" rel="noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100059080966642&sk=photos" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/profile.php?id=100059080966642" target="_blank" rel="noreferrer">
           <FiFacebook />
         </a>
       </Menu>

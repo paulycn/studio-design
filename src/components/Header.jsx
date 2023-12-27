@@ -18,7 +18,7 @@ function Header() {
       <div id="page-wrap"></div>
       <div className="z-10 fixed w-full flex text-lg gap-4 items-center justify-center bg-header-col sm:h-20 h-10 sm:justify-evenly sm:w-auto sm:relative ">
         <div>
-          <Link to="/" className="hover:no-underline">
+          <Link to="/" onClick={() => handleClick('home')} className="hover:no-underline">
             <Logo />
           </Link>
         </div>
@@ -34,14 +34,15 @@ function Header() {
           </Link>
         </nav>
         <div className="hidden sm:flex gap-4 justify-center">
-          <a href="#" onClick={() => (window.location.href = 'tel:+37379908683')}>
-            <BiPhoneCall />
-          </a>
           <a href="https://www.instagram.com/mobilaloft26/" target="_blank" rel="noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100059080966642&sk=photos" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=100059080966642" target="_blank" rel="noreferrer">
             <FiFacebook />
+          </a>
+          <a href="#" className="flex gap-4" onClick={() => (window.location.href = 'tel:+37379908683')}>
+            <BiPhoneCall />
+            <span className="text-sm hidden hover:inline">079908683</span>
           </a>
         </div>
       </div>

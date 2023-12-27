@@ -6,30 +6,38 @@ import OrderNow from '../components/OrderNow'
 function Catalog() {
   useEffect(() => {
     window.scrollTo(0, 0)
-    axios.get('http://localhost:1337/api/works', { params: { populate: ['categories', 'images', 'cover'] } }).then(({ data }) => setWorks(data.data))
+    const token = import.meta.env.VITE_SB_ACCESS_TOKEN
+    axios
+      .get('https://api.storyblok.com/v2/cdn/stories', {
+        params: {
+          content_type: 'works',
+          resolve_relations: 'works.categories',
+          token
+        }
+      })
+      .then(({ data }) => {
+        setWorks(data.stories)
+        setCategories(data.rels.filter((r) => r.content.component === 'category'))
+      })
   }, [])
 
   const [selectedCategory, setSelectedCategory] = useState(null)
   const [works, setWorks] = useState([])
+  const [categories, setCategories] = useState([])
 
   const handleCategoryClick = (type) => {
     setSelectedCategory(type)
   }
 
   const filterFunction = function (work) {
-    return work.attributes.categories.data.some((category) => category.id === selectedCategory)
+    return work.content.categories.includes(selectedCategory)
+  }
+
+  const getCategoryName = (categoryIds) => {
+    return categories.find((category) => categoryIds.includes(category.uuid)).content.name
   }
 
   const filteredData = !selectedCategory ? works : works.filter(filterFunction)
-
-  const categories = []
-  for (const work of works) {
-    for (const category of work.attributes.categories.data) {
-      categories.push({ id: category.id, name: category.attributes.name })
-    }
-  }
-
-  const uniqCategories = [...new Map(categories.map((category) => [category.name, category])).values()]
 
   return (
     <>
@@ -43,35 +51,31 @@ function Catalog() {
           >
             Toate lucrările
           </li>
-          {uniqCategories.map((category) => (
+          {categories.map((category) => (
             <li
-              key={category.id}
+              key={category.uuid}
               className={`cursor-pointer py-2 px flex justify-center rounded w-32 text-xs md:text-sm ${
-                selectedCategory === category.id ? 'bg-primary text-white' : 'border border-gray-600 text-gray-600'
+                selectedCategory === category.uuid ? 'bg-primary text-white' : 'border border-gray-600 text-gray-600'
               }`}
-              onClick={() => handleCategoryClick(category.id)}
+              onClick={() => handleCategoryClick(category.uuid)}
             >
-              {category.name}
+              {category.content.name}
             </li>
           ))}
         </ul>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 justify-start">
-          {filteredData.map(({ id, attributes }) => (
-            <div className="flex items-center justify-start" key={id}>
+          {filteredData.map(({ slug, content }) => (
+            <div className="flex items-center justify-start" key={slug}>
               <div className="flex flex-col items-center gap-3 min-w-full relative">
-                <div className="absolute top-2 right-2 rounded bg-gray-700 text-white text-xs py-1 px-2">
-                  {attributes.categories.data[0].attributes.name}
-                </div>
-                {attributes.cover && attributes.cover.data && attributes.cover.data.attributes.formats.small && (
-                  <img
-                    className="md:max-h-44 min-w-full rounded-sm object-cover max-h-36"
-                    src={'http://localhost:1337' + attributes.cover.data.attributes.formats.small.url}
-                    alt={attributes.name}
-                  />
+                <div className="absolute top-2 right-2 rounded bg-gray-700 text-white text-xs py-1 px-2">{getCategoryName(content.categories)}</div>
+                {content.cover && (
+                  <Link to={`/catalog/${slug}`}>
+                    <img className="md:max-h-44 min-w-full rounded-sm object-cover max-h-36" src={content.cover.filename} alt={content.name} />
+                  </Link>
                 )}
                 <Link
-                  to={`/catalog/${id}`}
+                  to={`/catalog/${slug}`}
                   className="text-xs sm:text-sm rounded py-1 px-6 bg-header-col text-white hover:no-underline hover:bg-primary"
                 >
                   Detalii

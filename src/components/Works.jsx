@@ -15,10 +15,10 @@ function Works() {
           >
             Comenzile realizate
           </Link>
-          <SliderSection title="Seturi" category="Set" />
+          <SliderSection title="Set" category="Set" />
           <SliderSection title="Sofa" category="Sofa" />
-          <SliderSection title="Scaune" category="Scaun" />
-          <SliderSection title="Dulap" category="Carcasă" />
+          <SliderSection title="Scaun" category="Scaun" />
+          <SliderSection title="Carcasă" category="Carcasă" />
         </div>
       </section>
     </>
