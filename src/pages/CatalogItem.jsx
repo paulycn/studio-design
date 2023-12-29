@@ -29,8 +29,6 @@ function CatalogItems() {
       })
   }, [])
 
-  // const categoriesName = selectedWork.attributes.categories.data.map((c) => c.attributes.name).join(', ')
-
   const getImages = () => selectedWork.content.images.map((i) => i.filename)
 
   return (

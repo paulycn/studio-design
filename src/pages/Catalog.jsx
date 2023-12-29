@@ -12,6 +12,7 @@ function Catalog() {
         params: {
           content_type: 'works',
           resolve_relations: 'works.categories',
+          // per_page: 100,
           token
         }
       })

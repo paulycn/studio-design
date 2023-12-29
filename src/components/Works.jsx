@@ -1,10 +1,32 @@
 import 'swiper/css/bundle'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import 'swiper/css'
+import axios from 'axios'
 import SliderSection from './SliderSection'
 import { Link } from 'react-router-dom'
 
 function Works() {
+  useEffect(() => {
+    const token = import.meta.env.VITE_SB_ACCESS_TOKEN
+    axios
+      .get('https://api.storyblok.com/v2/cdn/stories', {
+        params: {
+          content_type: 'works',
+          resolve_relations: 'works.categories',
+          // page: 1,
+          // per_page: 100,
+          token
+        }
+      })
+      .then(({ data }) => {
+        setWorks(data.stories)
+        setCategories(data.rels.filter((r) => r.content.component === 'category'))
+      })
+  }, [])
+
+  const [works, setWorks] = useState([])
+  const [categories, setCategories] = useState([])
+
   return (
     <>
       <section>
@@ -15,10 +37,13 @@ function Works() {
           >
             Comenzile realizate
           </Link>
-          <SliderSection title="Set" category="Set" />
-          <SliderSection title="Sofa" category="Sofa" />
-          <SliderSection title="Scaun" category="Scaun" />
-          <SliderSection title="Carcasă" category="Carcasă" />
+          {categories.map((category) => {
+            const categoryWorks = works
+              .filter((work) => work.content.categories.includes(category.uuid))
+              .sort((a, b) => new Date(a.published_at) - new Date(b.published_at))
+
+            return <SliderSection key={category.uuid} works={categoryWorks} category={category.content.name}></SliderSection>
+          })}
         </div>
       </section>
     </>
@@ -26,3 +51,11 @@ function Works() {
 }
 
 export default Works
+
+// {categories.map((category) => (
+//   <SliderSection
+//     key={category.uuid}
+//     works={works.filter((work) => work.content.categories.includes(category.uuid))}
+//     category={category.content.name}
+//   ></SliderSection>
+// ))}
