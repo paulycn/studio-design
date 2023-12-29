@@ -4,7 +4,7 @@ import { BiPhoneCall } from 'react-icons/bi'
 import { FiFacebook } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
-import Sidebar from './SIdebar'
+import Sidebar from './Sidebar'
 
 function Header() {
   const [activeLink, setActiveLink] = useState(null)
@@ -12,6 +12,7 @@ function Header() {
   const handleClick = (link) => {
     setActiveLink(link)
   }
+
   return (
     <header id="outer-container">
       <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}></Sidebar>
