@@ -11,14 +11,23 @@ function Catalog() {
       .get('https://api.storyblok.com/v2/cdn/stories', {
         params: {
           content_type: 'works',
-          resolve_relations: 'works.categories',
-          // per_page: 100,
+          per_page: 100,
           token
         }
       })
       .then(({ data }) => {
         setWorks(data.stories)
-        setCategories(data.rels.filter((r) => r.content.component === 'category'))
+      })
+    axios
+      .get('https://api.storyblok.com/v2/cdn/stories', {
+        params: {
+          content_type: 'category',
+          per_page: 100,
+          token
+        }
+      })
+      .then(({ data }) => {
+        setCategories(data.stories)
       })
   }, [])
 
@@ -35,7 +44,9 @@ function Catalog() {
   }
 
   const getCategoryName = (categoryIds) => {
-    return categories.find((category) => categoryIds.includes(category.uuid)).content.name
+    return categories.find((category) => {
+      return categoryIds.includes(category.uuid)
+    })?.content.name
   }
 
   const filteredData = !selectedCategory ? works : works.filter(filterFunction)

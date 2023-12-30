@@ -13,8 +13,7 @@ function Works() {
         params: {
           content_type: 'works',
           resolve_relations: 'works.categories',
-          // page: 1,
-          // per_page: 100,
+          per_page: 48,
           token
         }
       })
