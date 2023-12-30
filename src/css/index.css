@@ -71,19 +71,10 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: theme('colors.primary');
   text-underline-offset: 0.25rem;
+  border-color: #ffd364;
 }
 
-.active-link {
-  text-decoration: underline;
-  text-decoration-color: theme('colors.primary');
-  text-underline-offset: 0.25rem;
-}
-
-.disabled-link {
-  text-decoration: unset;
-}
-
-button {
+/* a.button {
   border-radius: 8px;
   border: 1px solid transparent;
   color: #ffff;
@@ -95,14 +86,14 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
+a.button:hover {
+  border-color: #ffd364;
 }
 
-button:focus,
-button:focus-visible {
+a.button:focus,
+a.button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 
 .active-link {
@@ -113,4 +104,5 @@ button:focus-visible {
 
 .disabled-link {
   text-decoration: none;
+  text-decoration: unset;
 }

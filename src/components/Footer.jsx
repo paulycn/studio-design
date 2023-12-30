@@ -22,7 +22,7 @@ function Footer() {
         <div className="hidden sm:flex flex-col items-center justify-center gap-2">
           {/* <a className="hover:no-underline">Contacte</a> */}
           <div className="flex gap-4 justify-center">
-            <a href="#" onClick={() => (window.location.href = 'tel:+37379908683')}>
+            <a href="tel:+37379908683">
               <BiPhoneCall />
             </a>
             <a href="https://www.instagram.com/mobilaloft26/" target="_blank" rel="noreferrer">
@@ -31,7 +31,7 @@ function Footer() {
             <a href="https://www.facebook.com/profile.php?id=100059080966642" target="_blank" rel="noreferrer">
               <FiFacebook />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100059080966642" target="_blank" rel="noreferrer">
+            <a href="tel:+37379908683" rel="noreferrer">
               <FaViber />
             </a>
           </div>

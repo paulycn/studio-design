@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import Button from '../components/Button'
 
 function About() {
   return (
@@ -46,13 +47,19 @@ function About() {
           <span className="text-sm md:text-base">Confecționarea, asamblarea și instalarea mobilierului conform proiectului aprobat.</span>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-5 sm:gap-2">
-        <div>
-          <h4 className="underline decoration-primary underline-offset-8 decoration-2">Măsurări exacte</h4>
-          <p className="mt-3 text-sm md:text-base">
-            Vă recomandăm să evitați măsurarea sine stătătoare a încăperii pentru evitarea prezentării datelor eronate. Specialiștii Art House dispun
-            de echipamentele moderne pentru măsurarea exactă a dimensiunilor spațiului dvs.ceea ce asigură o instalare ideală a produsului finit.
-          </p>
+      <div className="flex flex-col sm:flex gap-5 sm:gap-2 sm:pt-20">
+        <div className="flex flex-row sm:flex-row gap-5 sm:gap-36 sm:justify-center sm:items-center">
+          <div className="sm:w-1/2">
+            <h4 className="underline decoration-primary underline-offset-8 decoration-2">Măsurări exacte</h4>
+            <p className="mt-3 text-sm md:text-base">
+              Vă recomandăm să evitați măsurarea sine stătătoare a încăperii pentru evitarea prezentării datelor eronate. Specialiștii Art House
+              dispun de echipamentele moderne pentru măsurarea exactă a dimensiunilor spațiului dvs.ceea ce asigură o instalare ideală a produsului
+              finit.
+            </p>
+          </div>
+          <Fade right delay={500}>
+            <img src="./img/measure1.svg" alt="" className="w-1/5 hidden sm:block" />
+          </Fade>
         </div>
         <div className="flex flex-row sm:flex-row gap-5 sm:gap-36 sm:justify-center sm:items-center">
           <Fade left delay={500}>
@@ -70,13 +77,7 @@ function About() {
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-5 sm:justify-end items-center p-0 md:p-5 rounded">
         <span className="text-sm sm:text-base">Consultă un designer gratuit! </span>
         <Fade left delay={1200}>
-          <button
-            className="flex justify-center items-center gap-2 bg-primary border border-primary text-white"
-            onClick={() => (window.location.href = 'tel:+37379908683')}
-          >
-            <img src="./img/call.png" alt="call" />
-            079 908683
-          </button>
+          <Button>079908683</Button>
         </Fade>
       </div>
     </div>

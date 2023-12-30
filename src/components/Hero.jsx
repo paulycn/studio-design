@@ -1,4 +1,6 @@
 import React from 'react'
+import sofa from '@/assets/img/sofa.png'
+import ButtonPrimary from './ButtonPrimary'
 
 function Hero() {
   return (
@@ -34,13 +36,11 @@ function Hero() {
           absolut GRATIS.
         </p>
         <div>
-          <button className="text-base lg:text-lg" onClick={() => (window.location.href = 'tel:+37379908683')}>
-            Comandă acum
-          </button>
+          <ButtonPrimary></ButtonPrimary>
         </div>
       </div>
       <div>
-        <img className="max-h-[550px]" src="/src/assets/img/sofa.png" alt="sofa" />
+        <img className="max-h-[550px]" src={sofa} alt="sofa" />
       </div>
     </div>
   )

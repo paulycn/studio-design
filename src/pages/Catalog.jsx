@@ -54,17 +54,17 @@ function Catalog() {
   return (
     <>
       <section className="mx-auto py-5 max-w-6xl flex justify-center flex-col items-center gap-10">
-        <ul className="grid grid-cols-2 md:grid-cols-3 lg:flex-wrap lg:flex justify-center gap-4 md:gap-5">
-          <li
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:flex-wrap lg:flex justify-center gap-4 md:gap-5">
+          <button
             className={`cursor-pointer py-2 px flex justify-center rounded w-32 text-xs md:text-sm ${
               !selectedCategory ? 'bg-primary text-white' : 'border border-gray-600 text-gray-600'
             }`}
             onClick={() => handleCategoryClick(null)}
           >
             Toate lucrările
-          </li>
+          </button>
           {categories.map((category) => (
-            <li
+            <button
               key={category.uuid}
               className={`cursor-pointer py-2 px flex justify-center rounded w-32 text-xs md:text-sm ${
                 selectedCategory === category.uuid ? 'bg-primary text-white' : 'border border-gray-600 text-gray-600'
@@ -72,9 +72,9 @@ function Catalog() {
               onClick={() => handleCategoryClick(category.uuid)}
             >
               {category.content.name}
-            </li>
+            </button>
           ))}
-        </ul>
+        </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 justify-start">
           {filteredData.map(({ slug, content }) => (

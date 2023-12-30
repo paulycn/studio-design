@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import Button from './Button'
 
 function OrderNow() {
   return (
@@ -9,13 +10,7 @@ function OrderNow() {
         <h2 className="text-2xl md:text-5xl text-primary">Comandă acum!</h2>
         <p className="text-base">Consultă un designer gratuit</p>
         <Fade left>
-          <button
-            className="flex justify-center items-center gap-2 bg-primary border border-primary text-white"
-            onClick={() => (window.location.href = 'tel:+37379908683')}
-          >
-            <img src="./img/call.png" alt="call" />
-            079 908683
-          </button>
+          <Button>079908683</Button>
         </Fade>
       </div>
     </section>

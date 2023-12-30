@@ -41,7 +41,7 @@ function Header() {
           <a href="https://www.facebook.com/profile.php?id=100059080966642" target="_blank" rel="noreferrer">
             <FiFacebook />
           </a>
-          <a href="#" className="flex gap-4" onClick={() => (window.location.href = 'tel:+37379908683')}>
+          <a href="tel:+37379908683" className="flex gap-4">
             <BiPhoneCall />
             <span className="text-sm hidden hover:inline">079908683</span>
           </a>

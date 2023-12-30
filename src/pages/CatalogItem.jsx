@@ -4,6 +4,7 @@ import axios from 'axios'
 import FsLightbox from 'fslightbox-react'
 import { BsArrowLeft } from 'react-icons/bs'
 import Fade from 'react-reveal/Fade'
+import ButtonPrimary from '../components/ButtonPrimary'
 
 function CatalogItems() {
   const { slug } = useParams()
@@ -69,7 +70,7 @@ function CatalogItems() {
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-5 sm:justify-end items-center p-0 md:p-5 rounded">
           <span className="text-sm sm:text-base">Doriți un design asemănător? </span>
           <Fade left delay={1000}>
-            <button className="p-1 md:py-2.5 md:px-4 text-sm">Comandă acum!</button>
+            <ButtonPrimary></ButtonPrimary>
           </Fade>
         </div>
       </div>
