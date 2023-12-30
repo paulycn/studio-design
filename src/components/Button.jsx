@@ -8,7 +8,7 @@ export default function Button() {
      flex justify-center items-center gap-2 bg-primary border border-primary text-white"
     >
       <img src="./img/call.png" alt="call" />
-      079 908682
+      079 908683
     </a>
   )
 }
