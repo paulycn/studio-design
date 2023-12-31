@@ -67,7 +67,7 @@ function CatalogItems() {
           ))}
         </div>
         <FsLightbox toggler={lightboxController.toggler} type="image" sources={getImages()} slide={lightboxController.slide}></FsLightbox>
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-5 sm:justify-end items-center p-0 md:p-5 rounded">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:justify-end items-center pb-2 md:pb-0 p-0 md:p-5 rounded">
           <span className="text-sm sm:text-base">Doriți un design asemănător? </span>
           <Fade left delay={1000}>
             <ButtonPrimary></ButtonPrimary>
