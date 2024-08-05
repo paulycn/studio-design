@@ -23,7 +23,7 @@ function Hero() {
         md:text-5xl  
         md:leading-tight"
         >
-          Studio Design <br />
+          Loft Design <br />
           Mobilă la comandă
         </h1>
         <p

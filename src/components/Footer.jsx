@@ -17,7 +17,7 @@ function Footer() {
           <Link to="/" className="hover:no-underline">
             <Logo />
           </Link>
-          <span className="text-[10px] sm:text-xs">© Loft 2023. All rights reserved.</span>
+          <span className="text-[10px] sm:text-xs">© Loft {new Date().getFullYear()}. All rights reserved.</span>
         </div>
         <div className="hidden sm:flex flex-col items-center justify-center gap-2">
           {/* <a className="hover:no-underline">Contacte</a> */}

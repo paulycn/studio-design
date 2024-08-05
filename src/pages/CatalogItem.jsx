@@ -37,7 +37,7 @@ function CatalogItems() {
       <div className="max-w-5xl m-auto py-3 sm:py-5 flex flex-col gap-4 sm:gap-5 ">
         <div>
           <a className="text-sm sm:text-base cursor-pointer flex items-center gap-2 hover:no-underline max-w-fit" onClick={() => navigate(-1)}>
-            <BsArrowLeft /> Go back
+            <BsArrowLeft /> Înapoi
           </a>
           <h3 className="text-center underline decoration-primary underline-offset-4 sm:underline-offset-8">{selectedWork.name}</h3>
           <span></span>

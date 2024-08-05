@@ -25,7 +25,7 @@ function Header() {
         </div>
         <nav className="hidden sm:flex gap-11 text-base ">
           <Link to="/" onClick={() => handleClick('home')} className={activeLink === 'home' ? 'active-link' : 'disabled-link'}>
-            Home
+            Acasă
           </Link>
           <Link to="/catalog" onClick={() => handleClick('catalog')} className={activeLink === 'catalog' ? 'active-link' : 'disabled-link'}>
             Catalog

@@ -23,7 +23,7 @@ function Sidebar() {
           </Link>
         </div>
         <Link to="/" className="menu-item" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          Home
+          Acasă
         </Link>
         <Link to="/catalog" className="menu-item" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           Catalog
