@@ -32,7 +32,7 @@ function Hero() {
         >
           Doriți să creați propriul model de mobilier?
           <br />
-          Cu Studio Design, serviciul de proiectare design se oferă <br />
+          Cu Loft Design, serviciul de proiectare design se oferă <br />
           absolut GRATIS.
         </p>
         <div>
