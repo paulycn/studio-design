@@ -68,8 +68,8 @@ function About() {
           <div className="sm:w-1/2">
             <h4 className="underline decoration-primary underline-offset-8 decoration-2 md:text-xl text-lg">Calcularea costurilor </h4>
             <p className="mt-3 text-sm md:text-base">
-              Prețul mobilierului depinde în totalitate de materialele și furnitură aleasă. Lucrăm cu companii renumite din Europa, totodată suntem
-              flexibili în stabilirea prețului. Știm să ne încadrăm în bugetul clientului, păstrând un nivel de calitate înalt.
+              Prețul mobilierului depinde în totalitate de materialele și furnitură aleasă. Lucrăm cu companii renumite, totodată suntem flexibili în
+              stabilirea prețului. Știm să ne încadrăm în bugetul clientului, păstrând un nivel de calitate înalt.
             </p>
           </div>
         </div>

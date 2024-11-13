@@ -29,7 +29,7 @@ function Works() {
   return (
     <>
       <section>
-        <div className="mx-auto max-w-6xl py-10 md:py-20">
+        <div className="mx-auto py-10 md:py-20">
           <Link
             to="/catalog"
             className="font-normal text-text-p text-xl sm:text-3xl text-center block underline decoration-primary sm:underline-offset-8  underline-offset-4 decoration-2 hover:underline-offset-8 sm:hover:decoration-2 sm:hover:underline-offset-8"
@@ -50,11 +50,3 @@ function Works() {
 }
 
 export default Works
-
-// {categories.map((category) => (
-//   <SliderSection
-//     key={category.uuid}
-//     works={works.filter((work) => work.content.categories.includes(category.uuid))}
-//     category={category.content.name}
-//   ></SliderSection>
-// ))}

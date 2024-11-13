@@ -7,8 +7,8 @@ import Logo from './Logo'
 
 function Footer() {
   return (
-    <footer className="flex text-lg gap-4 items-center justify-center flex-wrap bg-bg-color h-18 sm:h-28 border border-t-primary">
-      <nav className="text-base flex items-center justify-evenly w-screen pt-4">
+    <footer>
+      <nav className="text-base flex items-center w-full justify-evenly pt-4 gap-4 flex-wrap bg-bg-color h-18 sm:h-28 border border-t-primary">
         <div className="hidden sm:flex flex-col gap-2">
           <Link to="/">Catalog</Link>
           <Link to="/">About Us</Link>

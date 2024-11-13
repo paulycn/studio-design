@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap') */
 
 @tailwind base;
 @tailwind components;
@@ -35,37 +34,13 @@
   padding-top: 10px;
 }
 
-.logo:hover {
-  /* font-family: 'Comforter Brush', cursive; */
-  /* font-family:'Dancing Script', cursive;; */
-  /* font-family: 'Great Vibes', cursive; */
-  /* font-family: "Kaushan Script", 'Comforter Brush';
-  font-weight: 400;
-  font-style: normal; */
-  transform: rotateY(45deg);
-  transition: all 5s ease;
-}
-
-/* .frame {
-  width: 80px;
-  height: 80px;
-  border: 3px solid purple;
-  perspective: 50px;
-} */
-
 body {
   font-family: 'Montserrat', sans-serif;
-  place-items: center;
-  min-width: 320px;
-  min-height: calc(100vh - 160px);
-
   color-scheme: light dark;
-   /*color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
 }
 
 main {
-  min-height: calc(100vh - 208px);
+  min-height: calc(100vh - 192px);
 }
 
 @media (max-width: 720px) {
@@ -97,24 +72,3 @@ a:hover {
   text-decoration: none;
   text-decoration: unset;
 }
-
-/* a.button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  color: #ffff;
-  background-color: theme('colors.primary');
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-a.button:hover {
-  border-color: #ffd364;
-}
-
-a.button:focus,
-a.button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */

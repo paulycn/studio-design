@@ -1,5 +1,8 @@
 import React from 'react'
 import sofa from '@/assets/img/sofa.png'
+import sofa2 from '@/assets/img/sofa2.png'
+import sofa3 from '@/assets/img/sofa3.png'
+
 import ButtonPrimary from './ButtonPrimary'
 
 function Hero() {
@@ -32,15 +35,16 @@ function Hero() {
         >
           Doriți să creați propriul model de mobilier?
           <br />
-          Cu Loft Design, serviciul de proiectare design se oferă <br />
+          Cu Loft Design, serviciul de proiectare design se oferă <br className="hidden md:block" />
           absolut GRATIS.
         </p>
         <div>
-          <ButtonPrimary></ButtonPrimary>
+          <ButtonPrimary />
         </div>
       </div>
       <div>
         <img className="max-h-[550px]" src={sofa} alt="sofa" />
+        {/* <img className="max-h-[420px] rounded-sm" src={sofa3} alt="sofa2" /> */}
       </div>
     </div>
   )
