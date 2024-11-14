@@ -48,10 +48,10 @@ function Hero() {
               className="mySwiper"
             >
               <SwiperSlide>
-                <img className="w-[full] h-60 md:h-[500px] object-contain" src={sofa3} alt="sofa" />
+                <img className="w-[full] h-60 md:h-[500px] object-contain rounded-lg" src={sofa3} alt="sofa" />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="w-[full] h-60 md:h-[500px] object-contain" src={sofa2} alt="sofa" />
+                <img className="w-[full] h-60 md:h-[500px] object-contain rounded-lg" src={sofa2} alt="sofa" />
               </SwiperSlide>
             </Swiper>
           </div>
