@@ -32,7 +32,7 @@ function Hero() {
           </div>
         </div>
         <div className="w-full sm:w-auto">
-          <div className="w-full max-w-sm md:max-w-3xl mx-auto">
+          <div className="w-full max-w-sm lg:max-w-3xl mx-auto">
             <Swiper
               autoHeight
               spaceBetween={30}
