@@ -14,7 +14,9 @@ function SliderSection({ category, works }) {
     <section>
       <div className="flex gap-2 md:gap-3 items-center justify-start ml-5 sm:ml-16 mb-1 mt-3 md:mt-6">
         <div className="w-2 h-2 rounded-full bg-primary"></div>
-        <Link to="/catalog">{category}</Link>
+        <Link to="/catalog" className="text-lg">
+          {category}
+        </Link>
         <div>
           <HiOutlineArrowNarrowRight />
         </div>
@@ -49,7 +51,7 @@ function SliderSection({ category, works }) {
             <SwiperSlide key={slug}>
               {content.cover && (
                 <Link to={`/catalog/${slug}`}>
-                  <img className="md:h-44 md:min-w-full rounded-sm object-cover max-h-40 h-36" src={content.cover.filename} alt={content.name} />
+                  <img className="md:h-44 w-full rounded-sm object-cover max-h-40 h-36" src={content.cover.filename} alt={content.name} />
                 </Link>
               )}
             </SwiperSlide>

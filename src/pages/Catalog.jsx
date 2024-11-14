@@ -82,9 +82,11 @@ function Catalog() {
               <div className="flex flex-col items-center gap-3 min-w-full relative">
                 <div className="absolute top-2 right-2 rounded bg-gray-700 text-white text-xs py-1 px-2">{getCategoryName(content.categories)}</div>
                 {content.cover && (
-                  <Link to={`/catalog/${slug}`}>
-                    <img className="md:max-h-44 min-w-full rounded-sm object-cover max-h-36" src={content.cover.filename} alt={content.name} />
-                  </Link>
+                  <div className="w-full h-48">
+                    <Link to={`/catalog/${slug}`}>
+                      <img className="w-full h-full rounded-sm object-cover" src={content.cover.filename} alt={content.name} />
+                    </Link>
+                  </div>
                 )}
                 <Link
                   to={`/catalog/${slug}`}
