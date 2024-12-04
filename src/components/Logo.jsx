@@ -3,7 +3,7 @@ import React from 'react'
 function Logo() {
   return (
     <div>
-      <img src="./img/logo1.svg" alt="logo" className="w-14 md:w-20" />
+      <img src="./img/logo2.svg" alt="logo" className="w-20 md:w-28" />
     </div>
   )
 }
