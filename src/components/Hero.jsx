@@ -13,6 +13,8 @@ import 'swiper/css'
 import { Autoplay, Pagination } from 'swiper/modules'
 
 function Hero() {
+  const images = [sofa3, sofa2]
+
   return (
     <div>
       <div className="mx-auto flex flex-col gap-10 flex-start sm:flex sm:flex-row sm:justify-center sm:items-center md:gap-10">
@@ -47,12 +49,11 @@ function Hero() {
               modules={[Autoplay, Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <img className="w-[full] h-60 md:h-[500px] object-contain rounded-lg" src={sofa3} alt="sofa" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img className="w-[full] h-60 md:h-[500px] object-contain rounded-lg" src={sofa2} alt="sofa" />
-              </SwiperSlide>
+              {images.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <img className="w-[full] h-60 md:h-[500px] object-contain rounded-lg" src={image} alt={`sofa`} />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

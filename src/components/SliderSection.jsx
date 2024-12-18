@@ -50,8 +50,13 @@ function SliderSection({ category, works }) {
           {works.map(({ slug, content }) => (
             <SwiperSlide key={slug}>
               {content.cover && (
-                <Link to={`/catalog/${slug}`}>
+                <Link to={`/catalog/${slug}`} className="relative group block">
                   <img className="md:h-44 w-full rounded-sm object-cover max-h-40 h-36" src={content.cover.filename} alt={content.name} />
+                  <div className="absolute inset-0 bg-black bg-opacity-50 md:opacity-0 opacity-30 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <button className="hidden md:block px-3 py-1.5 md:px-4 md:py-2 bg-header-col text-black text-xs md:text-base rounded-full border border-primary hover:bg-transparent hover:text-header-col transition-colors duration-300">
+                      Vezi mai multe detalii
+                    </button>
+                  </div>
                 </Link>
               )}
             </SwiperSlide>

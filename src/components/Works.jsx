@@ -32,7 +32,7 @@ function Works() {
         <div className="mx-auto py-10 md:py-20 max-w-7xl">
           <Link
             to="/catalog"
-            className="font-normal text-text-p text-xl sm:text-3xl text-center block underline decoration-primary sm:underline-offset-8  underline-offset-4 decoration-2 hover:underline-offset-8 sm:hover:decoration-2 sm:hover:underline-offset-8"
+            className="transition-all duration-300 ease-in-out hover:scale-105 font-normal text-text-p text-xl sm:text-3xl text-center block underline decoration-primary sm:underline-offset-8  underline-offset-4 decoration-2 hover:underline-offset-8 sm:hover:decoration-2 sm:hover:underline-offset-8"
           >
             Comenzile realizate
           </Link>

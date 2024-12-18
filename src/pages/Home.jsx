@@ -13,7 +13,7 @@ export default function Home() {
       </section>
       <section className=" lg:bg-white">
         <div className="mx-auto max-w-8xl bg-bg-color sm:px-14 sm:pt-10 sm:pb-16 rounded">
-          <h2 className="mb-5 sm:mb-10 font-normal text-text-p sm:text-2xl text-xl md:text-3xl text-center underline decoration-primary underline-offset-8 decoration-2">
+          <h2 className="mb-5 sm:mb-10 text-xl sm:text-2xl md:text-3xl text-text-p text-center font-normal underline decoration-primary underline-offset-8 decoration-2 transition hover:scale-105">
             De ce sa ne alegi pe noi?
           </h2>
           <div className="flex justify-center gap-4 sm:gap-10 flex-col md:flex-row">
